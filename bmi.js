@@ -7,13 +7,11 @@ const outputElement = document.getElementById("output");
 SaveButton.addEventListener('click', () => { 
     const genderValue = document.querySelector('input[name="gender"]:checked').value;
     const weightModifier = (genderValue === 'MALE') ? 3 : 0;
-
-        const userweight = parseFloat(weightValue.value-weightModifier);
-        const userheight = parseFloat(heightValue.value);
-    
+    const userweight = parseFloat(weightValue.value-weightModifier);
+    const userheight = parseFloat(heightValue.value);
     const divHeight = (userheight * userheight) / 10000;
-    
     const bmi = userweight / divHeight;
+    
         let category;
         let weightToNormal;
     
