@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CHECKER</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+
+<body>
+    <div class="container">
+    <Header>
+       <h1>BMI Checker</h1>
+    </Header>
+
+    <section>
+        <div class="intro">
+            <h2 class="intro-headings">Introduction</h2>
+            <p id="intro-para">Body Mass Index (BMI) is widely used to categorize a person's weight in relation to their height.Your weight is not enough to determine if you are in a healthy weight range.
+                It is a simple and commonly used method to estimate whether an individual has a healthy body weight, is underweight, overweight, or obese. The ideal weight is also likely to differ for men and women of similar heights.How then do you know whether you fall in the healthy weight range or not? Your BMI solves this confusion. It correlates your weight with your height and evaluates whether your weight is appropriate for your stature. You can use a BMI calculator to find out your BMI. It gives you a clue to your risk for weight-related health problems.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="intro">
+            <h2 class="intro-headings">Categories</h2>
+            <p id="intro-para2"> 
+                The World Health Organization (WHO) and many health organizations use the following BMI categories:<br>
+                <table >
+                <thead>
+                  <tr>
+                    <th>Categories</th>
+                    <th>BMI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Underweight</td>
+                        <td> less than 18.5 </td>
+                    </tr>  <tr>
+                        <td> Normal weight</td>
+                        <td>between 18.5 and 24.9</td>
+                    </tr>  
+                    <tr>
+                        <td>Overweight</td>
+                        <td>between 25 and 29.9</td>
+                    </tr>
+                    <tr>
+                        <td>Class I (Moderate obesity)</td>
+                        <td>between 30 and 34.9</td>
+                    </tr>
+                    <tr>
+                        <td>Class II (Severe obesity)</td>
+                        <td>between 35 and 39.9</td>
+                    </tr>
+                    <tr>
+                        <td>Class III (Very severe or morbid obesity) &nbsp; &nbsp;</td>
+                        <td>40 or greater</td>
+                    </tr>
+               </tbody>
+             </table>
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="box ">
+            <h2 class="py-3 box1" id="heading1">Check your BMI</h2>
+            <h2 id="gender" onclick="">GENDER :
+                <input type="radio" id="male" name="gender" value="MALE">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="FEMALE">
+                <label for="female">Female</label>
+            </h2>
+           <h3 >Weight :<input type="text" id="weight" class="box1 item "Placeholder="kg"></h3>
+           <h3 >Height : <input type="text" id="height" class="box1 item "Placeholder="cm"></h3>
+        <div class="save">
+           <button id="save-btn" class="btn1  pe-5" onclick="">save</button>
+        </div><br>
+        <p id="output"></p>
+    </div>
+    </section>
+    <footer> made by SafnaKM.<br>
+    <i class="fas fa-copyright">Blueberry Pvt Ltd</i>
+    </footer><br><br>     
+</div>
+<script src="bmi.js"></script>
+</body>
+</html>
