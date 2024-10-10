@@ -9,13 +9,14 @@ body{
 }
 Header{
     margin-top: 5px;
+    padding-left: 40px;
     color:white;
-    font-size:34px;
+    font-size:26px;
     background-color: #53122d;  
 }
 #heading1 {
     color: #53122d;
-    font-size: 45px;
+    font-size: 24px;
     max-width: 800px;
     background-color:#fff;
     text-align: center;
@@ -32,53 +33,61 @@ h1{
 .intro-headings{
     margin-top: -25px;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 #intro-para{
     margin-top: -25px;
-    font-size: 25px;
+    margin-left: 30px;
+    font-size: 22px;
     line-height: 1.5;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 #intro-para2{
     margin-top: -20px;
-    font-size: 25px;
+    margin-left: 30px;
+    font-size: 22px;
 }
 table{
-    font-size: 25px;
+  margin-left: 80px;
+    font-size: 22px;
 }
 .box {
     min-height: 600px; 
     max-width: 800px;
     margin: 50px auto;
     background: rgba(255, 255, 255, 0.664);
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   }
   .box1 {
-    max-width: 800px;
+    max-width: 900px;
     background: white;
     border-radius: 5px;
+    padding: 10px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   }
   #gender{
     color: #53122d;
-    margin-left: 95px;
-    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 25px;
+    cursor: pointer;
   }
   h3{
     color: #53122d;
     margin-left: 95px;
-    font-size: 30px;
+    font-size: 25px;
   }
   #weight,#height{
     color: #53122d;
     width:400px ;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 45px;
   }
   #male,#female{
     margin-left: 95px;
+    cursor: pointer;
   }
   button {
     margin-top: 45px;
@@ -92,6 +101,10 @@ table{
     font-size: 30px;
     padding-bottom: 6px;
     border-width: 0;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: cadetblue;
   }
   footer {
     margin-top: -25px;
@@ -102,4 +115,67 @@ table{
   }
   #output{
     margin-left: 95px;
+    color: #53122d;
   }
+ 
+
+/* Tablet View (Below 768px) */
+@media (max-width: 768px) {
+  header {
+      font-size: 24px;
+  }
+
+  .intro-headings {
+      font-size: 30px;
+  }
+
+  .box {
+      max-width: 90%;
+      padding: 15px;
+  }
+  #gender{
+    font-size: 24px;
+  }
+  h3{
+    color: #53122d;
+    margin-left: 45px;
+    font-size: 20px;
+  }
+  #weight,#height{
+    width: 250px;
+  }
+  button {
+      margin-left: 200px;
+      padding: 10px 15px;
+      font-size: 18px;
+  }
+}
+
+/* Mobile View (Below 480px) */
+@media (max-width: 480px) {
+  header {
+      font-size: 24px;
+  }
+
+  .intro-headings {
+      font-size: 24px;
+  }
+
+  #intro-para {
+      font-size: 16px;
+  }
+
+  .box {
+      max-width: 95%;
+      padding: 10px;
+  }
+
+  button {
+      font-size: 16px;
+      padding: 8px 10px;
+  }
+
+  footer {
+      font-size: 16px;
+  }
+}
