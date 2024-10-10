@@ -37,20 +37,18 @@ h1{
     text-transform: uppercase;
 }
 #intro-para{
-    margin-top: -25px;
-    margin-left: 30px;
-    font-size: 22px;
-    line-height: 1.5;
-    margin-bottom: 55px;
+  margin: -25px 0 55px 30px;
+  font-size: 22px;
+  line-height: 1.5;
+   
 }
 #intro-para2{
-    margin-top: -20px;
-    margin-left: 30px;
-    font-size: 22px;
+  margin: -20px 0 0 30px;
+  font-size: 22px;
 }
 table{
   margin-left: 80px;
-    font-size: 22px;
+  font-size: 22px;
 }
 .box {
     min-height: 600px; 
@@ -90,8 +88,7 @@ table{
     cursor: pointer;
   }
   button {
-    margin-top: 45px;
-    margin-left: 530px ;
+    margin: 45px 0 0 530px;
     min-height: 50px;
     width: 140px;
     border-radius: 20%;
